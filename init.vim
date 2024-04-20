@@ -21,6 +21,7 @@ Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/tc50cal/vim-terminal'
+Plug 'mfussenegger/nvim-jdtls'
 Plug 'https://github.com/catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
