@@ -11,7 +11,7 @@
   \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
   \,sm:block-blinkwait175-blinkoff150-blinkon175
 :set notermguicolors
-set guifont=DroidSansMono_Nerd_Font:h11
+:set guifont=DroidSansMono_Nerd_Font:h11
 call plug#begin()
 
 Plug 'https://github.com/vim-airline/vim-airline'
@@ -33,4 +33,3 @@ nnoremap <C-t> :NERDTreeTogle<CR>
 
 let g:airline_powerline_fonts = 1
 
-colorscheme catppuccin-mocha
