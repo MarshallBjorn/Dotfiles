@@ -1,9 +1,9 @@
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
-  -- see :help lsp-zero-keybindings
-  -- to learn the available actions
-  lsp_zero.default_keymaps({buffer = bufnr})
+	manage_nvim_cmp = {
+        set_extra_mappings = true
+    }
 end)
 
 local lspconfig = require('lspconfig')
@@ -12,7 +12,6 @@ lspconfig.tsserver.setup {}
 lspconfig.clangd.setup {}
 lspconfig.jdtls.setup {}
 
-vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
